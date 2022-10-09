@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+ <section class="header">
+     <nav>
+         <a href="index.html"><img src="images/logo-2-removebg-preview.png"></a>
+         <div class="nav-links" id="navLinks">
+             <i class="fa fa-times-circle"onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="">HOME</a></li>
+                 <li><a href="">ABOUT</a></li>
+                 <li><a href="">COURSE</a></li>
+                 <li><a href="">BLOG</a></li>
+                 <li><a href="">CONTACT</a></li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+     <div class="text-box">
+         <h1>Analogy Photography</h1>
+         <p>By Natasha Fuchig </p>
+         <a href="" class="hero-btn">More down here</a>
+     </div>
+
+ </section>
+
+<section class="gallery">
+    <h1>Gallery Test</h1>
+    <div class="gallery-img img1">
+        <div><a href="#">This is a title</a></div>
+    </div>
+    <div class="gallery-img img2">
+        <div><a href="#">This is a title</a></div>
+    </div>
+    <div class="gallery-img img3">
+        <div><a href="#">This is a title</a></div>
+    </div>
+    <div class="gallery-img img4">
+        <div><a href="#">This is a title</a></div>
+    </div>
+    <div class="gallery-img img5">
+        <div><a href="#">This is a title</a></div>
+    </div>
+    <div class="gallery-img img6">
+        <div><a href="#">This is a title</a></div>
+    </div>
+    <div class="gallery-img img7">
+        <div><a href="#">This is a title</a></div>
+    </div>
+</section>
+
+ <section class="course">
+     <h1>Courses We Offer</h1>
+     <div class="row">
+         <div class="course-col">
+             <h3>Black&White</h3>
+             <p>depressed pics</p>
+         </div>
+         <div class="course-col">
+             <h3>Portraits</h3>
+             <p>mostly my friendss</p>
+         </div>
+         <div class="course-col">
+             <h3>Objects</h3>
+             <p>a piece of beauty in everything</p>
+         </div>
+     </div>
+ </section>
+
+ <section class="campus">
+     <h1>Our Global Campus</h1>
+     <p>bla bla bla bla</p>
+     <div class="row">
+         <div class="campus-col">
+             <img src="images/london.png">
+             <div class="layer">
+                 <h3>London</h3>
+             </div>
+         </div>
+         <div class="campus-col">
+             <img src="images/newyork.png">
+             <div class="layer">
+                 <h3>New York</h3>
+             </div>
+         </div>
+         <div class="campus-col">
+             <img src="images/washington.png">
+             <div class="layer">
+                 <h3>Washington</h3>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+<section class="facilities">
+    <h1>Our facilities</h1>
+    <p>description description description</p>
+    <div class="row">
+        <dev class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>description description description</p>
+        </dev>
+        <dev class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p>description description description</p>
+        </dev>
+        <dev class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>description description description</p>
+        </dev>
+    </div>
+</section>
+
+ <section class="testimonials">
+     <h1>What our students say</h1>
+     <p>description description description</p>
+     <div class="row">
+         <div class="testimonial-col">
+             <img src="images/user1.jpg">
+             <div>
+                 <p> bla bla bla</p>
+                 <h3>Christine Berkley</h3>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-o"></i>
+             </div>
+         </div>
+         <div class="testimonial-col">
+             <img src="images/user2.jpg">
+             <div>
+                 <p> bla bla bla</p>
+                 <h3>David Bayer</h3>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-half-o"></i>
+             </div>
+         </div>
+     </div>
+ </section>
+
+<section class="cta">
+    <h1>Enroll for Our Online Courses Anywhere from the World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>bla bla bla bla bla bla</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Natasha Fuchig</p>
+</section>
+
+<script> //Java script for show/hide menu in mobile version
+    let navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<script src="js/gallery.js"></script>
+
+</body>
+</html>
