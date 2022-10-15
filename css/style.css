@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
+
 .header{
     min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("../images/banner-fuchig2.JPG");
+    background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("../images/banner-fuchig2.JPG");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -20,6 +21,45 @@ nav{
 nav img{
     width: 150px;
 }
+
+.logo {
+    display: flex;
+    height: 150px;
+    width: 50%;
+    align-items: center;
+}
+.child {
+    align-self: flex-end;
+    width: 150px;
+    height: 150px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -33,11 +73,11 @@ nav img{
 .nav-links ul li a{
     color: mintcream;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 .nav-links ul li::after{
     content: '';
-    width: 0%;
+    width: 0;
     height: 2px;
     background: #f5b758;
     display: block;
@@ -47,22 +87,44 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+.resume-button{
+    color: #f5b758;
+    background-color: transparent;
+    border: 1px solid #f5b758;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.resume-button:hover {
+    border: 1px solid darkgoldenrod;
+    background: #4b4949;
+    transition: 1s;
+}
+
 .text-box{
     width: 90%;
     color: antiquewhite;
     position: absolute;
-    top: 80%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text-box h1{
-    font-size: 42px;
+.text-box h1 {
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 20px;
     color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 .hero-btn{
     display: inline-block;
@@ -70,7 +132,7 @@ nav img{
     color: antiquewhite;
     border: 1px solid antiquewhite;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 20px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -114,6 +176,7 @@ nav .fa{
         padding: 30px;
     }
 }
+
 /*-------- course -------*/
 
 .course{
@@ -306,3 +369,24 @@ h3{
     margin-top: 20px;
     font-weight: 600;
 }
+
+.social-buttons{
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.social-buttons a{
+    text-decoration: none;
+    color: #f5b758;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-buttons a:hover{
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
