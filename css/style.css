@@ -2,24 +2,34 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #151726;
 }
 
+ul{
+    background-color: transparent;
+}
+a{
+    background-color: transparent;
+}
 .header{
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
     background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("../images/banner-fuchig2.JPG");
     background-position: center;
     background-size: cover;
     position: relative;
+    background-color: transparent;
 }
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
 nav img{
     width: 150px;
+    background-color: transparent;
 }
 
 .logo {
@@ -27,6 +37,7 @@ nav img{
     height: 150px;
     width: 50%;
     align-items: center;
+    background-color: transparent;
 }
 .child {
     align-self: flex-end;
@@ -35,10 +46,12 @@ nav img{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;
+    background-color: transparent;
 }
 .bounce:hover {
     animation-name: bounce;
     animation-timing-function: ease;
+    background-color: transparent;
 }
 @keyframes bounce {
     0%   { transform: translateY(0); }
@@ -63,17 +76,20 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
+    background-color: transparent;
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    background-color: transparent;
 }
 .nav-links ul li a{
     color: mintcream;
     text-decoration: none;
     font-size: 20px;
+    background-color: transparent;
 }
 .nav-links ul li::after{
     content: '';
@@ -98,13 +114,11 @@ nav img{
     margin-left: 15px;
     text-decoration: none;
 }
-
 .resume-button:hover {
     border: 1px solid darkgoldenrod;
     background: #4b4949;
     transition: 1s;
 }
-
 .text-box{
     width: 90%;
     color: antiquewhite;
@@ -113,18 +127,18 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    background-color: transparent;
 }
 .text-box h1 {
     font-size: 100px;
-    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: #f5b758;
 }
-
-
 .text-box p{
     margin: 10px 0 40px;
     font-size: 20px;
     color: antiquewhite;
-    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
 }
 .hero-btn{
     display: inline-block;
@@ -176,6 +190,49 @@ nav .fa{
         padding: 30px;
     }
 }
+
+/*-------- about me -------*/
+
+.about-me{
+    min-height: 80vh;
+    max-width: 900px;
+    border-top: 1px solid #f5b758;
+    margin: 0 auto;
+}
+.about-me h1{
+    font-size: 30px;
+    background-color: transparent;
+    color: #f5b758;
+    display: block;
+    position: relative;
+    margin: 20px 100px;
+    padding: 20px 50px;
+    text-align: left;
+}
+
+.about-pic{
+    float: right;
+    padding: 20px;
+    background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("../images/about-pic.png");
+    height: 300px;
+    width: 350px;
+    border-radius: 15%;
+}
+.about-me p{
+    font-size: 20px;
+    color: antiquewhite;
+    background-color: transparent;
+    margin: 35px 15px;
+}
+.about-me ul{
+    margin: 10px 0 40px 40px;
+    font-size: 20px;
+    color: antiquewhite;
+    background-color: transparent;
+    list-style-type: circle;
+}
+
+
 
 /*-------- course -------*/
 
@@ -372,12 +429,20 @@ h3{
 
 .social-buttons{
     position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
+    top: 80%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 }
-.social-buttons a{
+.fa{
+    background-color: transparent;
+}
+.social-bounce{
+    background-color: transparent;
+}
+.social-bounce a{
     text-decoration: none;
     color: #f5b758;
     display: block;
@@ -385,8 +450,38 @@ h3{
     padding: 20px;
     transition: all 0.3s ease;
 }
+ .social-buttons::after {
+     content: "";
+     display: block;
+     width: 1px;
+     height: 200px;
+     margin: 0 auto;
+     background-color: #f5b758;
+ }
 
-.social-buttons a:hover{
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-}
+ .email {
+     position: fixed;
+     color: #f5b758;
+     right: 20px;
+     top: 50%;
+     background-color: transparent;
+ }
 
+ .email a{
+     text-decoration: none;
+     color: #f5b758;
+     writing-mode: vertical-rl;
+     display: block;
+     text-align: center;
+     padding: 20px;
+     transition: all 0.3s ease;
+ }
+
+ .email::after{
+     content: "";
+     display: block;
+     width: 1px;
+     height: 200px;
+     margin: 0 auto;
+     background-color: #f5b758;
+ }
